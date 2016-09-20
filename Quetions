@@ -1,0 +1,41 @@
+Java Basics - Day 3
+
+
+Strings
+
+Refer the Java 8 API documentation of the String Class, StringBuilder Class in Java.lang Package
+	
+String Example Program
+
+Excercises
+
+
+Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..str.length()-1 inclusive).
+
+missingChar("Java", 1) → "Jva"
+missingChar("Android", 0) → "ndroid"
+Solution, AlternateSolution
+
+
+2. Given a string, take the last char and return a new string with the last char added at the front and back. The original string will be length 1 or more.
+backAround("Hello") → "oHelloo"
+Solution
+
+3. Return true if the given string contains between 1 and 3 'e' chars.
+	containE(“Hello”) → “true”
+	containE(“Helloeee”) → “false”
+	containE(“World”) → “false”
+	Solution
+
+4. Given an even length first string, such as "<<>>", and a second string “word”, return a new string where the second string is in the middle of the first string, e.g. "<<word>>".
+	embedWord("<<>>", "Hello") → "<<Hello>>"
+embedWord("<>", "HTML") → "<HTML>"
+embedWord("[]", "1,2,3,4,5") → "[1,2,3,4,5]"
+embedWord("{[]}", "a:1, b:2, c:3") → "{[a:1, b:2, c:3]}"
+Solution
+
+5. The web is built with HTML strings like "<i>APSSDC</i>" which draws APSSDC as italic text. In this example, the "i" tag makes <i> and </i> which surround the word "APSSDC". Given tag and word strings, create the HTML string with tags around the word, e.g. "<i>APSSDC</i>".
+makeTags("i", "Hello") → "<i>Hello</i>"
+makeTags("h1", "Android") → "<h1>Android</h1>"
+Solution
+
